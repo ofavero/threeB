@@ -1,0 +1,454 @@
+@font-face {
+    font-family: Sequel Sans;
+    src: url("../fonts/Sequel\ Sans\ Light\ Head.otf");
+}
+@font-face {
+    font-family: Bronova;
+    src: url("../fonts/Bronova Regular.otf");
+}
+@font-face {
+    font-family: Unione;
+    src: url("../fonts/Unione-ExtraLight-DEMO.otf");
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    max-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/home.png");
+    background-size: cover;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+    margin-left: 80px;
+}
+
+ul li a{
+    text-decoration: none;
+    margin: 50px;
+    font-size: 1.35em;
+    color: white;
+    font-weight: 500;
+    font-family: Sequel Sans;
+    position: relative;
+}
+
+a.actived::after{
+    content: "";
+    width: 118px;
+    border-bottom: 11px solid #7A7A7A;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+.content{
+    margin-top: 80px;
+    font-size: 4rem;
+}
+
+span.title img{
+    margin-left: 125px;
+    margin-top: 80px;
+}
+
+p.description{
+    color: white;
+    font-family: Bronova;
+    position: relative;
+    margin-left: 125px;
+    margin-top: 80px;
+}
+
+.description::after{
+    content: " ";
+    width: 350px;
+    border-bottom: 4px solid #8C815E;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+/* ESTILIZACAO SEGUNDA ARTICULACAO */
+
+.container-second-article{
+    background-size: cover;
+    background-image: url("../img/second-banner.png");
+    max-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+.second-title{
+    padding: 50px;
+    font-size: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.second-title span{
+    color: white;
+    font-family: Bronova;
+    position: relative;
+}
+
+.second-title span::after{
+    content: " ";
+    width: 350px;
+    border-bottom: 4px solid #8C815E;
+    position: absolute;
+    bottom: -10px;
+    left: 28%;
+}
+
+.second-description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.second-description p{
+    color: white;
+    font-family: Sequel Sans;
+    font-size: 1.5rem;
+    padding: 55px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.container-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-plans{
+    margin: 45px;
+}
+
+.button-plans button{
+    width: 255px;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    background: #8C815E;
+    font-size: 1.05rem;
+    cursor: pointer;
+    font-family: Bronova;
+}
+
+.button-plans button:hover{
+    background: transparent;
+    border: 1px solid #8C815E;
+    transition: .2s;
+}
+
+/* ESTILIZACAO DA TERCEIRA ARTICULACAO */
+
+.container-third-article{
+    background-size: cover;
+    background-image: url("../img/second-banner.png");
+    max-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+.third-text-description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-top: 100px;
+    font-family: Bronova;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.subdescription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-top: 35px;
+    font-family: Bronova;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.show-plans{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 65px;
+}
+
+.show-plans button{
+    width: 255px;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    background: #8C815E;
+    font-size: 1.05rem;
+    cursor: pointer;
+    font-family: Bronova;
+    padding: 5px;
+}
+
+.show-plans button:hover{
+    background: transparent;
+    border: 1px solid #8C815E;
+    transition: .2s;
+}
+
+/* ESTILIZACAO DA QUARTA ARTICULACAO */
+
+.container-forth-article{
+    background-size: cover;
+    background-image: url("../img/banner-xadrez.png");
+    max-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+.forth-description{
+    float: right;
+    margin-right: 130px;
+    margin-top: 150px;
+    font-size: 3em;
+    font-family: Bronova;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.white-text{
+    color: white;
+}
+
+.grey-text{
+    color: #777;
+}
+
+.gold-text{
+    color: #8C815E;
+}
+
+.footer{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    position: absolute;
+}
+
+.text-footer span{
+    color: white;
+    font-family: Bronova;
+}
+
+@media (max-width: 992px){
+    .forth-description{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .second-title span{
+        text-align: center;
+    }
+    .container-forth-article{
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/banner-xadrez.png");
+        background-size: cover;
+    }
+}
+
+@media(max-width: 739px){
+    li{
+        margin-left: 0px;
+    }
+    ul li a{
+        margin: 25px;
+    }
+}
+
+@media(max-width: 576px){
+    .second-title span::after{
+        left: 15%;
+    }
+}
+
+@media(max-width: 535px){
+    .forth-description{
+        float: right;
+        margin-right: 130px;
+        margin-top: 150px;
+        font-size: 2.5em;
+        font-family: Bronova;
+        font-weight: 800;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 510px){
+    li{
+        margin-left: 0px;
+    }
+    ul li a{
+        margin: 10px;
+    }
+}
+
+@media(max-width: 475px){
+    .description::after{
+        content: " ";
+        width: 250px;
+        border-bottom: 4px solid #8C815E;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+    }
+
+    .second-title span::after{
+        content: " ";
+        width: 350px;
+        border-bottom: 4px solid #8C815E;
+        position: absolute;
+        bottom: -10px;
+        left: 4%;
+    }
+}
+
+@media(max-width: 460px){
+    .forth-description{
+        float: right;
+        margin-right: 130px;
+        margin-top: 150px;
+        font-size: 2.3em;
+        font-family: Bronova;
+        font-weight: 800;
+        line-height: 1.2;
+    }
+    li{
+        margin-left: 0px;
+    }
+    ul li a{
+        margin: 2px;
+    }
+
+}
+
+@media(max-width: 433px){
+    .forth-description{
+        float: right;
+        margin-right: 130px;
+        margin-top: 150px;
+        font-size: 2.2em;
+        font-family: Bronova;
+        font-weight: 800;
+        line-height: 1.2;
+    }
+}
+
+@media(max-width: 420px){
+    .forth-description{
+        float: right;
+        margin-right: 130px;
+        margin-top: 150px;
+        font-size: 2em;
+        font-family: Bronova;
+        font-weight: 800;
+        line-height: 1.2;
+    }
+    
+}
+
+@media(max-width: 415px){
+    .second-title span::after{
+        content: " ";
+        width: 250px;
+        border-bottom: 4px solid #8C815E;
+        position: absolute;
+        bottom: -10px;
+        left: 4%;
+    }
+}
+
+@media(max-width: 395px){
+    .forth-description{
+        float: right;
+        margin-right: 90px;
+        margin-top: 150px;
+        font-size: 1.5em;
+        font-family: Bronova;
+        font-weight: 800;
+        line-height: 1.2;
+    }
+    span.title img{
+        margin-left: 10px;
+        margin-top: 80px;
+    }
+    p.description{
+        color: white;
+        font-family: Bronova;
+        position: relative;
+        margin-left: 10px;
+        margin-top: 80px;
+    }
+}
